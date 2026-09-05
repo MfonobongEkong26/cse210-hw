@@ -1,9 +1,23 @@
-using System;
+Random random = new Random();
+int magicNumber = random.Next(1, 101);
 
-class Program
+int guess = -1;
+
+while (guess != magicNumber)
 {
-    static void Main(string[] args)
+    Console.Write("What is your guess? ");
+    guess = int.Parse(Console.ReadLine());
+
+    if (guess < magicNumber)
     {
-        Console.WriteLine("Hello World! This is the Exercise3 Project.");
+        Console.WriteLine("Higher");
+    }
+    else if (guess > magicNumber)
+    {
+        Console.WriteLine("Lower");
+    }
+    else
+    {
+        Console.WriteLine("You guessed it!");
     }
 }
