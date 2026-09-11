@@ -6,10 +6,11 @@ public class Journal
 {
     public List<Entry> _entries = new List<Entry>();
 
-public int GetEntryCount()
-{
-    return _entries.Count;
-}
+    public int GetEntryCount()
+    {
+        return _entries.Count;
+    }
+
     public void AddEntry(Entry newEntry)
     {
         _entries.Add(newEntry);
