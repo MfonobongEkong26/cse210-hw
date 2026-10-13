@@ -1,0 +1,2 @@
+160
+ChecklistGoal|Exercise regularly|Exercise 5 times|20|3|100|3
